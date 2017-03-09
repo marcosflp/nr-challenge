@@ -11,4 +11,8 @@
 |
 */
 
+Route::get('/', function(){
+	return redirect('cnpq/1');
+});
+
 Route::get('cnpq/{page}', 'CnpqCrawlerController@show_biddings');
